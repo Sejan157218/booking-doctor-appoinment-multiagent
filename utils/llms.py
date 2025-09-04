@@ -8,7 +8,7 @@ GROQ_API_KEY=os.getenv("GROQ_API_KEY")
 os.environ["GROQ_API_KEY"]=GROQ_API_KEY
 
 class LLMModel:
-    def __init__(self, model_name="Gemma2-9b-It"):
+    def __init__(self, model_name="deepseek-r1-distill-llama-70b"):
         if not model_name:
             raise ValueError("Model is not defined.")
         self.model_name = model_name
